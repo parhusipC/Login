@@ -11,22 +11,22 @@ import android.widget.Toast as Toast1
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var UsernameEditText: EditText
-    private lateinit var PasswordEditText: EditText
-    private lateinit var Button: Button
+    private lateinit var usernameEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var button: Button
 
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        this.UsernameEditText = findViewById(R.id.etUsername)
-        this.PasswordEditText = findViewById(R.id.etPassword)
-        this.Button = findViewById(R.id.Button)
+        this.usernameEditText = findViewById(R.id.etUsername)
+        this.passwordEditText = findViewById(R.id.etPassword)
+        this.button = findViewById(R.id.Button)
 
-        Button.setOnClickListener {
-            val username = UsernameEditText.text.toString()
-            val password = PasswordEditText.text.toString()
+        button.setOnClickListener {
+            val username = usernameEditText.text.toString()
+            val password = passwordEditText.text.toString()
 
             if (isLoginValid(username, password)) {
                 // Login berhasil
