@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="menu_utama">Menu Utama</string>
+    <string name="masuk">Masuk</string>
+    <string name="password">Password</string>
+</resources>
